@@ -1,0 +1,154 @@
+.home {
+    height: 700px;
+    position: relative;
+    display: flex;
+    align-items: center
+}
+
+.bgImage {
+    position: absolute;
+    /* top: -1px; */
+    height: 100%;
+    width: auto;
+    right: 0;
+    z-index: -1;
+}
+
+.container {
+    margin: 0px 40px;
+    padding: 0px 40px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.homeContent {
+    /* margin-right: -55px; */
+}
+
+.homeContent h2 {
+    font-size: 50px;
+    text-align: left;
+    font-weight: 700;
+    line-height: 70px;
+    padding-bottom: 0px;
+    letter-spacing: -1.01px;
+    font-family: var(--fontFamily);
+    margin-bottom: 0;
+    animation-duration: 500ms;
+    animation-delay: 0ms;
+    animation-iteration-count: 1;
+    opacity: 1;
+    animation-name: fadeInUp;
+}
+
+.homeContent h2 span {
+    color: var(--pacificBlue);
+    font-weight: 900;
+    line-height: 70px;
+    padding-bottom: 30px;
+    letter-spacing: -1.01px;
+    font-family: var(--fontFamily);
+}
+
+.homeContent h4 span {
+    background: rgba(13, 179, 199, .12);
+    font-size: 14px;
+    text-transform: uppercase;
+    padding: 15px 30px;
+    display: inline-block;
+    font-weight: 600;
+    letter-spacing: 6px;
+    color: var(--pacificBlue);
+}
+
+.hiremeBtn {
+    background: var(--pacificBlue);
+    border-color: var(--pacificBlue);
+    margin-top: 10px;
+    color: var(--white);
+    padding: 5px;
+    width: 150px;
+    height: 50px;
+    float: left;
+    font-weight: 600;
+    font-size: 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: var(--fontFamily);
+    border-width: 0ch;
+}
+
+.col_lg_6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.frelencer_img {
+    position: relative;
+    top: 10px;
+}
+
+.freelancerImageStyle {
+    opacity: 1;
+    z-index: 1;
+    position: relative;
+    top: 69px;
+    left: 155px;
+}
+
+.tableImageStyle {
+    opacity: 1;
+    z-index: -1;
+}
+
+.teaPaperStyle {
+    position: relative;
+    top: -111px;
+    left: 164px;
+}
+
+@media (max-width: 425px) {
+    .bgImage {
+        display: none;
+    }
+
+    .row {
+        flex-direction: column;
+        position: relative;
+        top: 0px;
+    }
+
+    .container {
+        margin: 0px 10px;
+        padding: 0px 10px;
+    }
+
+    .col_lg_6 {
+        max-width: 100%;
+    }
+
+    .frelencer_img {
+        top: 0px;
+        left: -50px;
+        display: none;
+    }
+
+    .tableImageStyle {
+        position: relative;
+        top: -176px;
+        left: 65px;
+    }
+
+    .freelancerImageStyle {
+        top: 150px;
+        left: -40px;
+    }
+
+    .teaPaperStyle {
+        top: -289px;
+        left: 150px;
+    }
+}

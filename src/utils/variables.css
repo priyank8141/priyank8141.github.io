@@ -1,0 +1,10 @@
+:root {
+    --pacificBlue: #0DB3C7;
+    --white: #fff;
+    --cetaceanBlue: #040C2C;
+    --lightGrey:#fafafa;
+    --darkGrey:#A9A9A9;
+
+    /* font family */
+    --fontFamily:'Montserrat', sans-serif
+}

@@ -1,0 +1,132 @@
+.projects {
+    padding: 120px 0;
+    background: var(--lightGrey);
+}
+
+.section_title_two {
+    margin-bottom: 70px;
+}
+
+.section_title_two h5 {
+    font-size: 14px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--pacificBlue);
+    font-weight: 600;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.section_title_two h2 {
+    font-size: 38px;
+    font-weight: 700;
+    color: var(--cetaceanBlue);
+    text-transform: capitalize;
+    letter-spacing: -2px;
+    text-align: center;
+}
+
+.projectsList {
+    display: flex;
+    margin: 10px 5%;
+    justify-content: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.eachProject {
+    width: 425px;
+    z-index: 1;
+    box-shadow: 0 2px 6px 0 rgb(0 0 0 / 5%), 0 0 3px 0 rgb(0 0 0 / 10%);
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 4px;
+    margin: 10px 10px;
+    padding: 10px;
+    transition: 0.3s ease-in;
+    cursor: pointer;
+}
+
+.eachProject:hover {
+    box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);
+}
+
+.cardHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cardHeader div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+}
+
+.icon svg path {
+    stroke: var(--pacificBlue);
+}
+
+.icon2 {
+    width: 22px;
+    height: 22px;
+    margin: 5px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.icon2 svg path {
+    stroke: var(--darkGrey);
+}
+
+.icon2 svg polyline {
+    stroke: var(--darkGrey);
+}
+
+.icon2 svg line {
+    stroke: var(--darkGrey);
+}
+
+.cardTitle {
+    color: var(--pacificBlue);
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 1.1;
+    margin: 5px 25px;
+    padding: 5px;
+    text-align: left;
+}
+
+.cardDescription {
+    color: var(--cetaceanBlue);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    margin: 15px 25px;
+    padding: 5px;
+    text-align: left;
+}
+
+.cardtechStack {
+    margin: 30px 0px;
+    padding: 5px;
+    text-align: left;
+}
+
+.cardtechStack ul {
+    display: flex;
+    list-style-type: none;
+    flex-wrap: wrap;
+}
+
+.cardtechStack ul li {
+    font-size: 16px;
+    line-height: 1.1;
+    color: var(--darkGrey);
+    padding: 5px;
+}

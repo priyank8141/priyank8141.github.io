@@ -1,0 +1,79 @@
+.about {
+    padding: 120px 0;
+    background: var(--lightGrey);
+}
+
+.section_title_two {
+    margin-bottom: 70px;
+}
+
+.section_title_two h6 {
+    font-size: 14px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--pacificBlue);
+    font-weight: 600;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.section_title_two h2 {
+    font-size: 38px;
+    font-weight: 700;
+    color: var(--cetaceanBlue);
+    text-transform: capitalize;
+    letter-spacing: -2px;
+    text-align: left;
+}
+
+.aboutMe p {
+    font-family: var(--fontFamily);
+    font-size: 20px;
+    text-align: left;
+}
+
+.btns {
+    margin-top: 25px;
+}
+
+.aboutImage {
+    height: 500px;
+}
+
+.hiremeBtn {
+    background: var(--pacificBlue);
+    border-color: var(--pacificBlue);
+    margin-top: 10px;
+    color: #fff;
+    padding: 5px;
+    width: 150px;
+    height: 50px;
+    /* float: left; */
+    font-weight: 600;
+    font-size: 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: var(--fontFamily);
+    border-width: 0ch;
+}
+
+.downloadCvBtn {
+    margin-left: 10px;
+    border: 2px solid var(--pacificBlue);
+    margin-top: 10px;
+    padding: 5px;
+    width: 150px;
+    height: 50px;
+    /* float: left; */
+    font-weight: 600;
+    font-size: 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: var(--fontFamily);
+}
+
+@media (max-width: 425px) {
+    .aboutImage {
+        display: none;
+    }
+}
