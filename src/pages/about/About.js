@@ -1,7 +1,7 @@
 import React from 'react'
 import { data } from '../../utils/info';
 import styles from "./style.module.css";
-import abpottImage from '../../images/about.svg'
+import abpottImage from '../../images/about.svg';
 
 export const About = ({ aboutDivRef, scrollToContact }) => {
     return (

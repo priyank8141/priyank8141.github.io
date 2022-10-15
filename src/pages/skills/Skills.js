@@ -4,7 +4,7 @@ import styles from "./style.module.css";
 
 const EachSkill = ({ skillName, imageFile }) =>
     <div className={styles.eachSkill}>
-        <img src={imageFile} height="100" width="100" />
+        <img src={imageFile} alt="imagefile" height="100" width="100" />
         <h5>{skillName}</h5>
     </div>
 
