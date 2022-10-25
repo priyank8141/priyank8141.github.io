@@ -1,8 +1,37 @@
-import React from 'react'
+import React, { useState } from 'react'
+import { submitFormEnquiry } from '../../helpers/dbCrud';
 import { data } from '../../utils/info';
 import styles from "./style.module.css";
 
 export const Contact = ({ contactDivRef }) => {
+
+    const initalValues = {
+        name: null,
+        email: null,
+        phone: null,
+        subject: null,
+        message: null,
+    }
+
+    const [postData, setPostData] = useState(initalValues);
+
+    const handleInputChange = (e) => {
+        try {
+            const { name, value } = e.target;
+            setPostData({
+                ...postData,
+                [name]: value,
+            });
+        } catch (err) {
+            console.log(err);
+        }
+    };
+    const addEnquiry = async (e) => {
+        e.preventDefault()
+        const response = await submitFormEnquiry(postData)
+        console.log(response)
+    }
+
     return (
         <div className={styles.contact} ref={contactDivRef}>
             <div className="container">
@@ -42,19 +71,19 @@ export const Contact = ({ contactDivRef }) => {
                                 <h6>Contact us</h6>
                                 <h2>Let me know here</h2>
                             </div>
-                            <form className="form_class">
+                            <form className="form_class" onSubmit={addEnquiry}>
                                 <div className="row">
                                     <div className="col-lg-6">
-                                        <input type="text" id="name" name="name" className="form-control" placeholder="Your Name*" /><p></p></div><div className="col-lg-6">
-                                        <input type="email" className="form-control" id="email" name="email" placeholder="Your Email*" /><p></p></div>
+                                        <input type="text" id="name" required name="name" onChange={handleInputChange} className="form-control" placeholder="Your Name*" /><p></p></div><div className="col-lg-6">
+                                        <input type="email" className="form-control" required id="email" name="email" onChange={handleInputChange} placeholder="Your Email*" /><p></p></div>
                                     <div className="col-lg-6">
-                                        <input type="text" id="subject" name="subject" className="form-control" placeholder="Subject*" /><p></p></div>
+                                        <input type="text" id="subject" name="subject" required className="form-control" onChange={handleInputChange} placeholder="Subject*" /><p></p></div>
                                     <div className="col-lg-6">
-                                        <input type="text" className="form-control" id="phone" name="phone" placeholder="Phone*" />
+                                        <input type="text" className="form-control" id="phone" name="phone" onChange={handleInputChange} placeholder="Phone" />
                                         <p></p>
                                     </div>
                                 </div>
-                                <textarea name="message" id="message" className="form-control" rows="6" placeholder="Your Message ..."></textarea>
+                                <textarea name="message" id="message" required className="form-control" rows="6" onChange={handleInputChange} placeholder="Your Message ..."></textarea>
                                 <button type="submit" className={styles.send_btn}>Send Message</button>
                             </form>
                         </div>
