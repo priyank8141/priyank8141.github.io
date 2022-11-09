@@ -263,3 +263,10 @@
         left: 150px;
     }
 }
+
+@media (max-width: 425px) {
+    .homeContent h2 {
+        font-size: 38px;
+        line-height: 50px;
+    }
+}
