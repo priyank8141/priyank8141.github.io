@@ -82,15 +82,16 @@
 
 .navItem {
     margin-left: 35px;
-    font-family: 'Fira Sans' serif;
+    font-family: Montserrat, sans-serif;
     display: inline-block;
-    padding-top: 0.3125rem;
+    padding-top: 1.3125rem;
     padding-bottom: 0.3125rem;
     margin-right: 1rem;
     font-size: 2rem;
     line-height: inherit;
     white-space: nowrap;
     cursor: pointer;
+    font-weight: 500;
 }
 
 .navbar_light .navbar_toggler {
