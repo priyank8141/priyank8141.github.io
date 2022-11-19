@@ -1,23 +1,24 @@
 {
   "files": {
-    "main.css": "/static/css/main.44ff7420.css",
-    "main.js": "/static/js/main.2394bae1.js",
+    "main.css": "/static/css/main.5dbe3cfb.css",
+    "main.js": "/static/js/main.4d2bcb07.js",
     "static/js/787.c4e84df0.chunk.js": "/static/js/787.c4e84df0.chunk.js",
+    "static/media/greenpillImage.jpg": "/static/media/greenpillImage.c27f57fe11216057eeeb.jpg",
+    "static/media/communityImage.jpg": "/static/media/communityImage.1bf81c45fc5111e5f199.jpg",
     "static/media/homebackgound.svg": "/static/media/homebackgound.f6d9553ddb9c114938fa1a062a574601.svg",
+    "static/media/tensorplaceImage.jpg": "/static/media/tensorplaceImage.a3b5095fd34ce9527ec5.jpg",
+    "static/media/dashyDashImage.webp": "/static/media/dashyDashImage.4aab7540ac239690acf2.webp",
     "static/media/table.1040818b.png": "/static/media/table.1040818b.14d9cf11205e846eb952.png",
     "static/media/about.svg": "/static/media/about.bcb75c94ab5c30b067284d994b3655ae.svg",
     "static/media/homeShadow.png": "/static/media/homeShadow.172b7d9045e1b6d14bac.png",
     "static/media/f_man.20b27179.png": "/static/media/f_man.20b27179.9f3edb31ce7c114b1048.png",
     "index.html": "/index.html",
-    "static/media/githubIcon.svg": "/static/media/githubIcon.c3125fcb226f3bef1c4e274549acb10b.svg",
-    "static/media/linkIcon.svg": "/static/media/linkIcon.0651711eae489d037188b1421926c7cf.svg",
-    "static/media/folderIcon.svg": "/static/media/folderIcon.be019954d5cdaffa7d91c490fafe9f19.svg",
-    "main.44ff7420.css.map": "/static/css/main.44ff7420.css.map",
-    "main.2394bae1.js.map": "/static/js/main.2394bae1.js.map",
+    "main.5dbe3cfb.css.map": "/static/css/main.5dbe3cfb.css.map",
+    "main.4d2bcb07.js.map": "/static/js/main.4d2bcb07.js.map",
     "787.c4e84df0.chunk.js.map": "/static/js/787.c4e84df0.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.44ff7420.css",
-    "static/js/main.2394bae1.js"
+    "static/css/main.5dbe3cfb.css",
+    "static/js/main.4d2bcb07.js"
   ]
 }
