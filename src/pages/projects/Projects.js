@@ -1,23 +1,25 @@
 import React from 'react'
 import { data } from '../../utils/info';
 import styles from "./style.module.css";
-import { ReactComponent as GithubIcon } from "./../../images/githubIcon.svg";
-import { ReactComponent as LinkIcon } from "./../../images/linkIcon.svg";
-import { ReactComponent as FolderIcon } from "./../../images/folderIcon.svg";
 
-const EachProject = ({ project }) =>
-    <div className={styles.eachProject}>
-        <div className={styles.cardHeader} >
-            <div className={styles.icon}><FolderIcon /></div>
-            <div>
-                {project?.github && <div className={styles.icon2}><GithubIcon onClick={() => { window.open(project?.github) }} /></div>}
-                {project?.site && <div className={styles.icon2}><LinkIcon onClick={() => { window.open(project?.site) }} /></div>}
+const EachProject = ({ project }) => <>
+    <li className={styles.bookingcard} style={{ backgroundImage: `url(${project?.projectImg})` }}>
+        <div className={styles.emptyDiv}>
+            &nbsp;
+        </div>
+        <div className={styles.informationscontainer}>
+            <h2 className={styles.title} onClick={() => { window.open(project?.site) }} >{project.title}</h2>
+            <div className={styles.cardtechStack}><ul>{project?.techStack?.map((stack) => <li>&#x2022; {stack}</li>)}</ul></div>
+            <div className={styles.moreinformation}>
+                <div className={styles.infoanddatecontainer}>
+                    <div classNames={(styles.box, styles.info)}>
+                        <p>{project.description}</p>
+                    </div>
+                </div>
             </div>
         </div>
-        <div className={styles.cardTitle}><h3>{project?.title}</h3></div>
-        <div className={styles.cardDescription}><p>{project?.description}</p></div>
-        <div className={styles.cardtechStack}><ul>{project?.techStack?.map((stack) => <li>{stack}</li>)}</ul></div>
-    </div>
+    </li>
+</>
 
 export const Projects = ({ projectDivRef }) => {
     return (
@@ -31,9 +33,11 @@ export const Projects = ({ projectDivRef }) => {
                 </div>
                 <div className="row">
                     <div className={styles.projectsList}>
-                        {
-                            data?.projects?.map((project) => <EachProject project={project} />)
-                        }
+                        <ul className={styles.eachprojectlist}>
+                            {
+                                data?.projects?.map((project) => <EachProject project={project} />)
+                            }
+                        </ul>
                     </div>
                 </div>
             </div>

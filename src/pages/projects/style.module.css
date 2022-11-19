@@ -4,7 +4,7 @@
 }
 
 .section_title_two {
-    margin-bottom: 70px;
+    margin-bottom: 40px;
 }
 
 .section_title_two h5 {
@@ -50,68 +50,6 @@
     box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);
 }
 
-.cardHeader {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.cardHeader div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.icon {
-    width: 40px;
-    height: 40px;
-    margin: 5px;
-}
-
-.icon svg path {
-    stroke: var(--pacificBlue);
-}
-
-.icon2 {
-    width: 22px;
-    height: 22px;
-    margin: 5px;
-    align-items: center;
-    cursor: pointer;
-}
-
-.icon2 svg path {
-    stroke: var(--darkGrey);
-}
-
-.icon2 svg polyline {
-    stroke: var(--darkGrey);
-}
-
-.icon2 svg line {
-    stroke: var(--darkGrey);
-}
-
-.cardTitle {
-    color: var(--pacificBlue);
-    font-weight: 600;
-    font-size: 22px;
-    line-height: 1.1;
-    margin: 5px 25px;
-    padding: 5px;
-    text-align: left;
-}
-
-.cardDescription {
-    color: var(--cetaceanBlue);
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 30px;
-    margin: 15px 25px;
-    padding: 5px;
-    text-align: left;
-}
-
 .cardtechStack {
     margin: 30px 0px;
     padding: 5px;
@@ -127,6 +65,209 @@
 .cardtechStack ul li {
     font-size: 16px;
     line-height: 1.1;
-    color: var(--darkGrey);
+    color: var(--cetaceanBlue);
     padding: 5px;
+}
+
+/* card css */
+
+.eachprojectlist {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+}
+
+.eachprojectlist .bookingcard {
+    position: relative;
+    width: 300px;
+    display: flex;
+    flex: 0 0 300px;
+    flex-direction: column;
+    margin: 20px;
+    margin-bottom: 30px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+    background-position: center center;
+    background-size: cover;
+    text-align: center;
+    color: var(--darkBlue);
+    transition: 0.3s;
+    height: 400px;
+}
+
+.eachprojectlist .bookingcard::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(10, 72, 112, 0);
+    transition: 0.3s;
+}
+
+.eachprojectlist .bookingcard .bookcontainer {
+    height: 200px;
+}
+
+.eachprojectlist .bookingcard .bookcontainer .content {
+    position: relative;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    transform: translateY(-200px);
+    transition: 0.3s;
+}
+
+.eachprojectlist .bookingcard .bookcontainer .content .btn {
+    border: 3px solid var(--white);
+    padding: 10px 15px;
+    background: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.3em;
+    color: var(--white);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.eachprojectlist .bookingcard .bookcontainer .content .btn:hover {
+    background: var(--white);
+    border: 0px solid var(--white);
+    color: var(--darkBlue);
+}
+
+.eachprojectlist .bookingcard .informationscontainer {
+    flex: 1 0 auto;
+    padding: 5px;
+    background: var(--veryLightGrey);
+    transform: translateY(206px);
+    transition: 0.3s;
+}
+
+.title {
+    cursor: pointer;
+    color: var(--pacificBlue);
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 1.1;
+    margin: 5px 25px;
+    padding: 5px;
+}
+
+.emptyDiv {
+    height: 40px;
+}
+
+.eachprojectlist .bookingcard .informationscontainer .title {
+    position: relative;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.eachprojectlist .bookingcard .informationscontainer .title::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    width: 50px;
+    margin: auto;
+    background: var(--pacificBlue);
+}
+
+.eachprojectlist .bookingcard .informationscontainer .price {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.eachprojectlist .bookingcard .informationscontainer .price .icon {
+    margin-right: 10px;
+}
+
+.eachprojectlist .bookingcard .informationscontainer .moreinformation {
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.eachprojectlist .bookingcard .informationscontainer .moreinformation .infoanddatecontainer {
+    display: flex;
+}
+
+.eachprojectlist .bookingcard .informationscontainer .moreinformation .infoanddatecontainer .box {
+    flex: 1 0;
+    padding: 15px;
+    margin-top: 20px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    background: var(--white);
+    font-weight: bold;
+    font-size: 0.9em;
+}
+
+.eachprojectlist .bookingcard .informationscontainer .moreinformation .infoanddatecontainer .box .icon {
+    margin-bottom: 5px;
+}
+
+.eachprojectlist .bookingcard .informationscontainer .moreinformation .infoanddatecontainer .box.info {
+    color: #ec992c;
+    margin-right: 10px;
+    font-size: 16px;
+    line-height: 30px;
+    margin: 15px 25px;
+    padding: 5px;
+}
+
+.eachprojectlist .bookingcard .informationscontainer .moreinformation .disclaimer {
+    margin-top: 20px;
+    font-size: 0.8em;
+    color: #7d7d7d;
+}
+
+.eachprojectlist .bookingcard:hover::before {
+    background: rgba(10, 72, 112, 0.6);
+}
+
+.eachprojectlist .bookingcard:hover .bookcontainer .content {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.eachprojectlist .bookingcard:hover .informationscontainer {
+    transform: translateY(0px);
+}
+
+.eachprojectlist .bookingcard:hover .informationscontainer .moreinformation {
+    opacity: 1;
+}
+
+@media (max-width: 768px) {
+    .eachprojectlist .bookingcard::before {
+        background: rgba(10, 72, 112, 0.6);
+    }
+
+    .eachprojectlist .bookingcard .bookcontainer .content {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+
+    .eachprojectlist .bookingcard .informationscontainer {
+        transform: translateY(0px);
+    }
+
+    .eachprojectlist .bookingcard .informationscontainer .moreinformation {
+        opacity: 1;
+    }
 }

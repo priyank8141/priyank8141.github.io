@@ -64,7 +64,7 @@
     text-align: center;
     display: inline-block;
     background: var(--pacificBlue);
-    color: #fff;
+    color: var(--white);
     border-color: var(--pacificBlue);
     font-size: 16px;
     border-radius: 4px;
@@ -73,6 +73,10 @@
     font-weight: 500;
     box-shadow: none;
     border-width: 0ch;
+}
+
+.send_btn:hover {
+    transform: scale(1.05);
 }
 
 @media only screen and (max-width: 425px) {

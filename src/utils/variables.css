@@ -2,9 +2,10 @@
     --pacificBlue: #0DB3C7;
     --white: #fff;
     --cetaceanBlue: #040C2C;
-    --lightGrey:#fafafa;
-    --darkGrey:#A9A9A9;
-
+    --lightGrey: #fafafa;
+    --darkGrey: #A9A9A9;
+    --darkBlue: #0a4870;
+    --veryLightGrey: #f0f0f0;
     /* font family */
-    --fontFamily:Montserrat, sans-serif
+    --fontFamily: Montserrat, sans-serif
 }
