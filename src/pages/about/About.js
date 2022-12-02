@@ -19,7 +19,7 @@ export const About = ({ aboutDivRef, scrollToContact }) => {
                                 <div className={styles.aboutMe}>
                                     <p>{data?.about?.shortIntro || "your short Intro"}</p>
                                     <div className={styles.btns} >
-                                        <button className={styles.hiremeBtn} onClick={scrollToContact}>Hire Me</button>
+                                        <button className={styles.hiremeBtn} onClick={scrollToContact}>Get in touch</button>
                                         <button className={styles.downloadCvBtn} onClick={() => { window.open("https://drive.google.com/file/d/1re0H8WGMyOm2hjW-DpzEoiTSiLEPfGQH/view?usp=sharing") }}>View CV</button>
                                     </div>
                                 </div>

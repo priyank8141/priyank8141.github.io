@@ -27,8 +27,8 @@ export const Home = ({ homeDivRef, scrollToContact }) => {
                                 I'm Priyank Jain <br />
                                 Independent <span>Freelancer</span>
                             </h2>
-                            <h4><span>I CREATE THOUSAND OF WEBSITE</span></h4>
-                            <button className={styles.hiremeBtn} onClick={scrollToContact}>Hire Me</button>
+                            <h4><span>Take your business to the next level</span></h4>
+                            <button className={styles.hiremeBtn} onClick={scrollToContact}>Work with Me</button>
                         </div>
                     </div>
                     <div className={styles.col_lg_6}>

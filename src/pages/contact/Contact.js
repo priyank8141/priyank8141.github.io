@@ -64,7 +64,7 @@ export const Contact = ({ contactDivRef }) => {
                                 <div className={styles.media_get_item}>
                                     <i className="fa fa-3x fa-globe"></i>
                                     <div className={styles.media_body}>
-                                        <h6>Get Me Here</h6>
+                                        <h6>Location</h6>
                                         <p>{data?.about?.address || 'Your Address'}</p>
                                     </div>
                                 </div>
