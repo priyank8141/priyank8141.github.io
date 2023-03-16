@@ -11,16 +11,6 @@ const Contact = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    // Simple POST request with a JSON body using fetch
-    const requestOptions = {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        name: "priyank",
-        email: "jainpriyank789@gamil.com",
-      }),
-    };
-
     emailjs
       .sendForm(
         "service_x2cnpx6",
