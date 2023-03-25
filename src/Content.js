@@ -1,9 +1,12 @@
 // import images
-import Hero_person from "./assets/images/Hero/person.png";
+// import Hero_person from "./assets/images/Hero/person.png";
+import Hero_person from "./assets/images/Hero/undraw_digital_nomad_re_w8uy.svg";
+
 
 import figma from "./assets/images/Skills/figma.png";
 import django from "./assets/images/Skills/django.png";
 import reactjs from "./assets/images/Skills/react.png";
+import nextjs from "./assets/images/Skills/next.png";
 import redux from "./assets/images/Skills/redux.png";
 import typescript from "./assets/images/Skills/typescript.png";
 import javascript from "./assets/images/Skills/javascript.png";
@@ -71,11 +74,11 @@ export const content = {
     image: Hero_person,
     hero_content: [
       {
-        count: "3+",
+        count: "2+",
         text: "Years of Experinse in Web development",
       },
       {
-        count: "20+",
+        count: "15+",
         text: "Projects Worked in my career",
       },
     ],
@@ -88,6 +91,11 @@ export const content = {
         name: "React js",
         para: "Lorem ipsum text  dummy",
         logo: reactjs,
+      },
+      {
+        name: "Next js",
+        para: "Lorem ipsum text  dummy",
+        logo: nextjs,
       },
       {
         name: "Redux",
@@ -206,9 +214,9 @@ export const content = {
     subtitle: "GET IN TOUCH",
     social_media: [
       {
-        text: "priyankplj@gmail.com",
+        text: "jainpriyank789@gmail.com",
         icon: GrMail,
-        link: "mailto:priyankplj@gmail.com",
+        link: "mailto:jainpriyank789@gmail.com",
       },
       {
         text: "+91 8780533084",
