@@ -1,8 +1,8 @@
 // import content
-import { useEffect } from "react";
+import { createElement } from "react";
 import { content } from "../Content";
 const Hero = () => {
-  const { hero } = content;
+  const { hero, Contact } = content;
 
   return (
     <section id="home" className="overflow-hidden">
@@ -42,6 +42,24 @@ const Hero = () => {
               >
                 <h3>{content.count}</h3>
                 <p>{content.text}</p>
+              </div>
+            ))}
+          </div>
+          <div className="flex-1 flex flex-row gap-5 mt-10">
+            {Contact.social_media.map((content, i) => (
+              <div
+                key={i}
+                data-aos="fade-down"
+                data-aos-delay={i * 430}
+                className="flex items-center gap-2"
+              >
+                <a
+                  className="font-Poppins flex"
+                  href={content.link}
+                  target="_blank"
+                >
+                  <h4 className="">{createElement(content.icon)}</h4>
+                </a>
               </div>
             ))}
           </div>

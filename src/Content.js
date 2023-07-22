@@ -37,7 +37,8 @@ import Hireme_person2 from "./assets/images/Hireme/person2.png";
 // import icons from react-icons
 import { GrMail } from "react-icons/gr";
 import { MdArrowForward, MdCall } from "react-icons/md";
-import { BsInstagram } from "react-icons/bs";
+import { FaLinkedin } from "react-icons/fa";
+import { BsInstagram, BsGithub } from "react-icons/bs";
 import { TbSmartHome } from "react-icons/tb";
 import { BiUser } from "react-icons/bi";
 import { RiServiceLine, RiProjectorLine } from "react-icons/ri";
@@ -214,14 +215,19 @@ export const content = {
     subtitle: "GET IN TOUCH",
     social_media: [
       {
+        text: "Priyank Jain",
+        icon: FaLinkedin,
+        link: "https://www.linkedin.com/in/priyank8141",
+      },
+      {
+        text: "priyank8141",
+        icon: BsGithub,
+        link: "https://github.com/priyank8141",
+      },
+      {
         text: "jainpriyank789@gmail.com",
         icon: GrMail,
         link: "mailto:jainpriyank789@gmail.com",
-      },
-      {
-        text: "+91 8780533084",
-        icon: MdCall,
-        link: "https://wa.me/918141301286",
       },
     ],
   },
