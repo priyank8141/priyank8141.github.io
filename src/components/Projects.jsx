@@ -1,12 +1,14 @@
 import { content } from "../Content";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
+import { BiLinkExternal } from "react-icons/bi";
 
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
 
 import { Pagination } from "swiper";
+import { createElement } from "react";
 
 const Projects = () => {
   const { Projects } = content;
@@ -26,23 +28,42 @@ const Projects = () => {
         <div class="grid grid-flow-row gap-8 text-neutral-600 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
           {Projects.project_content.map((content, i) => (
             <div class="my-8 rounded shadow-lg shadow-gray-200 dark:shadow-gray-900 bg-white dark:bg-gray-800 duration-300 hover:-translate-y-1">
-              <a _href={content.site} class="cursor-pointer">
-                <figure>
-                  <img
-                    src={content.projectImg}
-                    class="rounded-t h-72 w-full object-cover"
-                  />
+              <figure>
+                <img
+                  src={content.projectImg}
+                  class="rounded-t h-72 w-full object-fill"
+                />
 
-                  <figcaption class="p-4">
-                    <p class="text-lg mb-4 font-bold leading-relaxed text-gray-800 dark:text-gray-300">
+                <figcaption class="p-4">
+                  {content?.site ? (
+                    <a
+                      href={content?.site}
+                      target="_blank"
+                      class="cursor-pointer"
+                    >
+                      <p class="flex gap-2 items-center text-lg mb-4 font-bold leading-relaxed text-gray-800 dark:text-gray-300">
+                        {content.title}
+                        {createElement(BiLinkExternal)}
+                      </p>
+                    </a>
+                  ) : (
+                    <p class="flex gap-2 items-center text-lg mb-4 font-bold leading-relaxed text-gray-800 dark:text-gray-300">
                       {content.title}
                     </p>
-                    <small class="leading-5 text-gray-500 dark:text-gray-400">
-                      {content.description}
-                    </small>
-                  </figcaption>
-                </figure>
-              </a>
+                  )}
+                  <small class="leading-5 text-gray-500 dark:text-gray-400">
+                    {content.description}
+                  </small>
+                </figcaption>
+              </figure>
+              <div class="px-6 pt-4 pb-2">
+                {content.techStack.map((tech) => (
+                  <span class="inline-block bg-bg_light_primary rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
+                    {tech}
+                  </span>
+                ))}
+              </div>
+              {/* </a> */}
             </div>
           ))}
         </div>
