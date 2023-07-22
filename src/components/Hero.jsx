@@ -6,8 +6,8 @@ const Hero = () => {
 
   return (
     <section id="home" className="overflow-hidden">
-      <div className="min-h-screen relative flex md:flex-row flex-col-reverse md:items-end justify-center items-center">
-        <div
+      <div className="min-h-screen relative flex md:flex-row flex-col-reverse md:items-center justify-center items-center">
+        {/* <div
           data-aos="slide-left"
           data-aos-delay="1200"
           className="absolute h-full md:w-4/12 w-8/12 top-0 right-0 bg-primaryLinear bottom-0 -z-10"
@@ -16,10 +16,14 @@ const Hero = () => {
             {hero.firstName}{" "}
             <span className="text-dark_primary">{hero.LastName}</span>
           </h1>
-        </div>
+        </div> */}
 
         {/* first col */}
         <div className="pb-16 px-6 pt-5" data-aos="fade-down">
+          <h2 className="text-[#8cbdef]">
+            {hero.firstName} {hero.LastName}
+          </h2>
+          <br />
           <h2>{hero.title}</h2>
           <br />
           <div className="flex justify-end">
@@ -44,7 +48,7 @@ const Hero = () => {
         </div>
 
         {/* sec col */}
-        <div className="md:h-[37rem] h-96">
+        <div className="hidden sm:block md:h-[37rem] h-96">
           <img
             src={hero.image}
             data-aos="slide-up"
@@ -58,4 +62,3 @@ const Hero = () => {
 };
 
 export default Hero;
-  
