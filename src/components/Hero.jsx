@@ -1,6 +1,8 @@
 // import content
 import { createElement } from "react";
 import { content } from "../Content";
+import { Player, Controls } from "@lottiefiles/react-lottie-player";
+import profileJson from "../assets/lottieJSON/profile.json";
 const Hero = () => {
   const { hero, Contact } = content;
 
@@ -67,12 +69,24 @@ const Hero = () => {
 
         {/* sec col */}
         <div className="hidden sm:block md:h-[37rem] h-96">
-          <img
+          {/* <img
             src={hero.image}
             data-aos="slide-up"
             alt="..."
             className="h-full object-cover"
-          />
+          /> */}
+          <Player
+            autoplay={true}
+            loop={true}
+            controls={false}
+            src={profileJson}
+            style={{ height: "500px", width: "500px" }}
+          >
+            {/* <Controls
+              visible={true}
+              buttons={["play", "repeat", "frame", "debug"]}
+            /> */}
+          </Player>
         </div>
       </div>
     </section>
