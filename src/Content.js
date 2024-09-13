@@ -19,7 +19,9 @@ import services_logo3 from "./assets/images/Services/logo3.png";
 
 import person_project from "./assets/images/Projects/person.png";
 import dashyDashImg from './assets/images/Projects/dashyDashImage.webp'
+import smileDentalImg from './assets/images/Projects/smileDental.jfif'
 import communityImg from './assets/images/Projects/communityImage.jpg'
+import sparkItImg from './assets/images/Projects/sparkit.jpg'
 import tensorplaceImg from './assets/images/Projects/tensorplaceImage.jpg'
 import greenpillImg from './assets/images/Projects/greenpillImage.jpg'
 import productionManageentImg from './assets/images/Projects/productionManageent.png'
@@ -56,10 +58,10 @@ export const content = {
       link: "#skills",
       icon: BiUser,
     },
-    {
-      link: "#services",
-      icon: RiServiceLine,
-    },
+    // {
+    //   link: "#services",
+    //   icon: RiServiceLine,
+    // },
     {
       link: "#projects",
       icon: RiProjectorLine,
@@ -160,18 +162,20 @@ export const content = {
     ],
   },
   Projects: {
-    title: "Projects",
+    title: "Major Projects",
     subtitle: "MY CREATION",
     image: person_project,
     project_content:
       [
-        { title: 'DashyDash', description: 'A Platform for processing Restaurant invoices and providing analyzed valuable data with the attractive graphs. Users will upload invoices and will get processed data and additionally analyzed data weekly, monthly, and yearly, which helps grow their business.', techStack: ['Next Js', 'Django Rest Framework', 'PostgreSQL'], site: 'https://www.dashydash.com/', projectImg: dashyDashImg },
-        { title: 'Creative AI Prompts', description: 'Creative AI Prompts is a revolutionary open-source AI prompting tool designed to cater to the modern worlds insatiable appetite for creativity and inspiration. Powered by cutting-edge AI technology, this platform serves as a hub for users to explore, generate, and share an array of imaginative prompts, enabling the cultivation of unique ideas and sparking the creativity of individuals across the globe.', techStack: ['Next Js', 'MongoDb'], site: 'https://creative-ai-prompts.vercel.app/', projectImg: creativePromptImg },
+        { title: 'Smile Dental', description: 'The cutting-edge platform SmileDental was created to simplify communication between dental offices and suppliers. Dental offices can use the platform to submit prescription orders (RX) for a range of dental supplies and select a manufacturer to complete the orders from. Key features are Case creation, Invoice management, Payment processing, Scheduled reminders, Role-based login, Shipping and case completion', techStack: ['Next Js', 'Nestjs', 'PostgreSQL'], projectImg: smileDentalImg },
+        { title: 'SavorOps', description: 'A Platform for processing Restaurant invoices and providing analyzed valuable data with the attractive graphs. Users will upload invoices and will get processed data and additionally analyzed data weekly, monthly, and yearly, which helps grow their business.', techStack: ['Next Js', 'Django Rest Framework', 'PostgreSQL'], site: 'https://www.savorops.com/', projectImg: dashyDashImg },
         { title: 'JainSangh', description: 'A Platform for Connecting All Jain Sangh on one platform Digitally. Users can join any of Sangh(community) and get connected with them and get participate in multiple events and activities mange by Sangh.', techStack: ['React Js', 'Node Js', 'PostgreSQL'], site: 'https://www.jainsangh.info/', projectImg: communityImg },
-        { title: 'Hemsuri Maharaj', description: 'The "Continuous Upvas Booking System" is an innovative project designed to facilitate the seamless booking of continuous upvas (fast) for an entire year on the auspicious occasion of Hemsuri Maharaj Pratishtha. This comprehensive system not only provides a hassle-free process for reserving upvas slots but also incorporates a variety of events related to the Pratishtha celebration.', techStack: ['React Js', 'FireStore'], site: 'https://www.hemsuri.in/', projectImg: hemsuriImg },
-        { title: 'Tensorplace.io', description: 'A transparent blockchain-enabled marketplace platform for Machine Learning and Data Science capabilities.  Users can sell and buy repositories as per their needs. The seller can sell his private repositories of platforms like GitHub, Bitbucket, and GitLab and generate revenue using the Tensorplace platform.', techStack: ['React Js', 'Node Js', 'FireStore'], projectImg: tensorplaceImg },
-        { title: 'GreenPill Admin Panel', description: 'An Admin PlatForm for one of the Solar Equipment Delar, From where he can manage his products to sell, his user’s inquiry, offer Module, new update notification, Payment Module, Each open service status.', techStack: ['JavaScript', 'NodeJs', 'FireStore'], projectImg: greenpillImg },
-        { title: 'Production Management', description: 'A Platform for production factory to manage their work, where they can manage their orders and give live update of stage where orders exists', techStack: ['React Js'], projectImg: productionManageentImg },
+        { title: 'Sparkit', description: 'Sparkit is a fan video collaboration network that empowers 50+ creators to produce genuine, non-branded content. The content is evaluated based on fan engagement and real-time voting.', techStack: [ 'Next.js', 'NestJS','TypeScript', 'Retool'],projectImg: sparkItImg , site: '',github:"" },
+        // { title: 'Creative AI Prompts', description: 'Creative AI Prompts is a revolutionary open-source AI prompting tool designed to cater to the modern worlds insatiable appetite for creativity and inspiration. Powered by cutting-edge AI technology, this platform serves as a hub for users to explore, generate, and share an array of imaginative prompts, enabling the cultivation of unique ideas and sparking the creativity of individuals across the globe.', techStack: ['Next Js', 'MongoDb'], site: 'https://creative-ai-prompts.vercel.app/', projectImg: creativePromptImg },
+        // { title: 'Hemsuri Maharaj', description: 'The "Continuous Upvas Booking System" is an innovative project designed to facilitate the seamless booking of continuous upvas (fast) for an entire year on the auspicious occasion of Hemsuri Maharaj Pratishtha. This comprehensive system not only provides a hassle-free process for reserving upvas slots but also incorporates a variety of events related to the Pratishtha celebration.', techStack: ['React Js', 'FireStore'], site: 'https://www.hemsuri.in/', projectImg: hemsuriImg },
+        // { title: 'Tensorplace.io', description: 'A transparent blockchain-enabled marketplace platform for Machine Learning and Data Science capabilities.  Users can sell and buy repositories as per their needs. The seller can sell his private repositories of platforms like GitHub, Bitbucket, and GitLab and generate revenue using the Tensorplace platform.', techStack: ['React Js', 'Node Js', 'FireStore'], projectImg: tensorplaceImg },
+        // { title: 'GreenPill Admin Panel', description: 'An Admin PlatForm for one of the Solar Equipment Delar, From where he can manage his products to sell, his user’s inquiry, offer Module, new update notification, Payment Module, Each open service status.', techStack: ['JavaScript', 'NodeJs', 'FireStore'], projectImg: greenpillImg },
+        // { title: 'Production Management', description: 'A Platform for production factory to manage their work, where they can manage their orders and give live update of stage where orders exists', techStack: ['React Js'], projectImg: productionManageentImg },
         // { title: '', description: '', techStack: [], site: '',github:"" },
       ],
   },

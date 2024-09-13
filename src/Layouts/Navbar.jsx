@@ -5,17 +5,17 @@ import { createElement } from "react";
 
 const Navbar = () => {
   const { nav } = content;
-  const [showMenu, setShowMenu] = useState(false);
+  const [showMenu, setShowMenu] = useState(true);
   const [active, setActive] = useState(0);
 
   return (
     <div className="w-full flex justify-center">
-      <div
+      {/* <div
         className="sm:cursor-pointer fixed top-10 left-10 z-[999] rounded-lg bg-white/40 p-2"
         onClick={() => setShowMenu(!showMenu)}
       >
         <HiMenuAlt2 size={34} />
-      </div>
+      </div> */}
       <nav
         className={`fixed  z-[999] flex items-center gap-5 bg-slate-200/60 px-6 py-3 backdrop-blur-md rounded-full text-dark_primary duration-300 ${
           showMenu ? "bottom-10" : "bottom-[-100%]"
